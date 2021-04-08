@@ -2,7 +2,7 @@
   "name": "rotate-dom",
   "repository": "https://github.com/itxve/react-rotate",
   "repoName": "react-rotate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     "src/components/*"
   ],
@@ -12,7 +12,7 @@
     "pushnpm": "yarn publish",
     "rmnpm": "yarn deprecate && yarn unpushnpm",
     "unpushnpm": "npm unpublish rotate-dom --force --registry=https://registry.npmjs.org/",
-    "deprecate": "npm deprecate -f rotate-dom@*",
+    "deprecate": "npm deprecate rotate-dom@'<1.0.0' --registry=https://registry.npmjs.org/",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "pregh": "yarn build",
@@ -25,7 +25,7 @@
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "rotate-dom": "^0.8.1"
+    "rotate-dom": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.37",
