@@ -8,6 +8,6 @@ export default defineConfig({
     port: 9000,
     strictPort: true,
   },
-  base: `/${repoName}/`,
+  base: process.env.NODE_ENV === "NODE_ENV" ? `/${repoName}/` : "",
   plugins: [reactRefresh()],
 });

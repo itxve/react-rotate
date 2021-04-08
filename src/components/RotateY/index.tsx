@@ -2,12 +2,11 @@ import React, { CSSProperties, FC, ReactNode } from "react";
 import "./index.styl";
 
 const RotateY: FC<{
-  back?: ReactNode;
+  back: ReactNode;
   style?: CSSProperties | {};
-  width: string;
-}> = ({ children, back, style, width }) => {
+}> = ({ children, back, style }) => {
   return (
-    <div className="card" style={{ width, ...style }}>
+    <div className="card" style={{ ...style }}>
       <div className="front">{children}</div>
       <div className="back">{back}</div>
     </div>
