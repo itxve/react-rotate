@@ -1,0 +1,1 @@
+.card.hover,.card:hover{transform:rotateY(180deg)}.card.static.hover,.card.static:hover{transform:none}.card{transition:transform 1.5s;transform-style:preserve-3d;position:relative;border-radius:4px}.back,.front{backface-visibility:hidden;position:absolute;top:0;left:0}.front{z-index:2}.back{transform:rotateY(180deg);z-index:3}.back,.card-container,.front{border-radius:4px}
